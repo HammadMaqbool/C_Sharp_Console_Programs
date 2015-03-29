@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AssignmntWork
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int height = 20;
+            int width = 30;
+            int result = height * width;
+            Console.WriteLine("area of rectangle ="+result);
+            int result2 = (height + width) * 2;
+            Console.WriteLine("perimeter of rectangle =" + result2);
+            Console.Read();
+
+
+        }
+    }
+}

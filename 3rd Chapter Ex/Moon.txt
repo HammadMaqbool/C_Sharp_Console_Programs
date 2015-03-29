@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AssignmntWork
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.Write("Type your weight: ");
+            float weight = float.Parse(Console.ReadLine());
+            Console.WriteLine("Your weight on the moon will be {0} kg.", (weight * 17 / 100));
+            Console.Read();
+        }
+    }
+}

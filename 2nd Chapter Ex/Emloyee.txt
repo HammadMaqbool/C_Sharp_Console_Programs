@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AssignmntWork
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            String FirstName = "Hammad";
+            String LastName = "Maqbool";
+            int age = 23;
+            char gender = 'M';
+            Console.WriteLine("FirstName "+FirstName+" LastName "+LastName+" Age "+age+" Gender "+gender);
+            Console.Read();
+        }
+    }
+}

@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+using System.Globalization;
+
+namespace Class_Work_HomeWork
+{
+    class Program
+    {
+        static void Main()
+        {
+            double startNumber = 1;
+            double totalSum = 1;
+            Console.WriteLine(startNumber);
+            for (double j = 2; j <= 1000; j++)
+            {
+                startNumber = 1;
+                if (j % 2 == 0)
+                {
+                    startNumber = startNumber / j;
+                }
+                else
+                {
+                    startNumber = -(startNumber / j);
+                }
+                Console.WriteLine(startNumber);
+
+                totalSum = totalSum + startNumber;
+            }
+            Console.WriteLine("The Total sum is: {0}", totalSum);
+            Console.ReadLine();
+        }
+    }
+}

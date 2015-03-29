@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AssignmntWork
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 5;
+            int b = 10;
+            int Swaper;
+            Swaper = a;
+            a = b;
+            b = Swaper;
+            Console.WriteLine("A Value is "+a+"B value is "+b);
+            Console.Read();
+        }
+    }
+}

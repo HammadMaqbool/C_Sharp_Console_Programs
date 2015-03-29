@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AssignmntWork
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool isMale=false;
+            string a = "Male";
+            if (a == "Male")
+            {
+                isMale = true;
+            }
+            Console.WriteLine(isMale.ToString());
+            Console.Read();
+        }
+    }
+}

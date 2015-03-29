@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Class_Work_HomeWork
+{
+    class Program
+    {
+        static void Main()
+        {
+            double r;
+            Console.Write("Enter the radius r:");
+            r = double.Parse(Console.ReadLine());
+                Console.WriteLine("Perimeter={0}", 2 * Math.PI * r);
+                Console.WriteLine("Area={0}", Math.PI * r * r);
+            Console.Read();
+        }
+    }
+}

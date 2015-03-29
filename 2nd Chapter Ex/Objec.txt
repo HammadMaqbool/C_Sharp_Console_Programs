@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AssignmntWork
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            String S1 = "Hello ";
+            String S2 = "World";
+            object Result = S1 + S2;
+            String Result2 = Result.ToString();
+            Console.WriteLine("Result is "+Result2);
+            Console.Read();
+        }
+    }
+}

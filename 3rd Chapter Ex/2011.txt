@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exams_Prep
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter a 4 Digit Number");
+            int Number = Convert.ToInt32(Console.ReadLine());
+            int Num1 = Number / 1000;
+            int Num2 = (Number / 100) % 10;
+            int Num3 = (Number / 10) % 10;
+            int Num4 = Number % 10;
+            int Sum = Num1 + Num2 + Num3 + Num4;
+            Console.WriteLine("Sum is"+Sum);
+            Console.WriteLine("Reverse Order is :{0}{1}{2}{3}",Num4,Num3,Num2,Num1);
+            Console.WriteLine("Last in First :{0}{1}{2}{3}", Num3, Num1, Num2, Num4);
+            Console.WriteLine("Replace the 2nd & 3rd :{0}{1}{2}{3}", Num1, Num3, Num2, Num4);
+            Console.Read();
+        }
+    }
+}

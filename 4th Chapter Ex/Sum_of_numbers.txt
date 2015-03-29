@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Class_Work_HomeWork
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter 1st Number");
+            int _1st = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter 1st Number");
+            int _2nd = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter 1st Number");
+            int _3rd = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Sum of three Numbers is :{0}",_1st+_2nd+_3rd);
+            Console.Read();
+        }
+    }
+}

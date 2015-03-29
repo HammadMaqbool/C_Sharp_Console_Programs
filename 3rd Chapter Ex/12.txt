@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections;
+
+namespace Exams_Prep
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int v = 5;
+            int position;
+            string binary = Convert.ToString(v, 2);
+            char[] BinryArray = binary.ToCharArray();
+            Console.WriteLine("Enter Position");
+            position = int.Parse(Console.ReadLine());
+            bool Flag = BinryArray[position] == '1' ? true : false;
+            Console.WriteLine("Result is {0} At Position {1} The bit is {2}",Flag,position,BinryArray[position]);
+            Console.ReadLine();
+        }
+
+    }
+}

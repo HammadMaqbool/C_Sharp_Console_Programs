@@ -1,0 +1,53 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Class_Work_HomeWork
+{
+    class Program
+    {
+        static void Main()
+        {
+           
+            string companyName, address, phoneNumber, faxNumber, webSite, managerFirstName, managerLastName, managerPhoneNumber;
+            byte managerAge;
+            Console.Write("Enter the name of the company:");
+            companyName = Console.ReadLine();
+            Console.Write("Enter the address of the company:");
+            address = Console.ReadLine();
+            Console.Write("Enter the phone number of the company:");
+            phoneNumber = Console.ReadLine();
+            Console.Write("Enter the fax number of the company:");
+            faxNumber = Console.ReadLine();
+            Console.Write("Enter the web site of the company:");
+            webSite = Console.ReadLine();
+            Console.Write("Enter the first name of the manager:");
+            managerFirstName = Console.ReadLine();
+            Console.Write("Enter the last name of the manager:");
+            managerLastName = Console.ReadLine();
+            Console.Write("Enter the age of the manager:");
+            bool isAgeByte = byte.TryParse(Console.ReadLine(), out managerAge);
+            Console.Write("Enter the phone number of the manager:");
+            managerPhoneNumber = Console.ReadLine();
+            if (isAgeByte)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Company name:"+companyName);
+                Console.WriteLine("Address:"+address);
+                Console.WriteLine("Phone number:"+phoneNumber);
+                Console.WriteLine("Fax number:"+faxNumber);
+                Console.WriteLine("Web site:"+webSite);
+                Console.WriteLine("Manager:"+ managerLastName);
+                Console.WriteLine("Manager's age:"+managerAge);
+                Console.WriteLine("Manager's phone number:"+managerPhoneNumber);
+            }
+            else
+            {
+                Console.WriteLine("Not a valid entry! Manager's age is not a byte number!");
+            }
+            Console.ReadLine();
+        }
+    }
+}
